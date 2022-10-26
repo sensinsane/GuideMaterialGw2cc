@@ -1,0 +1,8 @@
+https://github.com/gw2cc/gw2cc/blob/master/prefabs/3d/misc/UIBillboard.tscn
+you want to use a https://github.com/gw2cc/gw2cc/blob/master/prefabs/ui/misc/ScalingViewport.gd
+* Billboard
+* ScalingViewport
+     - Control
+              - Your UI goes here
+thats how your node structure should look like
+you will want to use this material for the billboard: https://github.com/gw2cc/gw2cc/blob/master/assets/materials/Billboard.tres
