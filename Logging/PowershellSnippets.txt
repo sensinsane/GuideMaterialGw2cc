@@ -1,0 +1,20 @@
+Get-Content gw2cc.log -tail 100 –wait | Select-String 'DEBUG'
+
+back tails gw2cc.log for 100 lines and only gets lines with DEBUG in them
+
+
+Get-Content gw2cc.log | Select-String 'DEBUG' > debug.log
+
+debug.log will have all lines from gw2cc.log with DEBUG in them
+
+
+Get-Content gw2cc.log -tail 100 –wait | Select-String '>>> SKILL PRIORITY: DEFIANCE BREAK <<<'
+
+same thing but only prints lines with >>> SKILL PRIORITY: DEFIANCE BREAK <<<
+
+
+save all gw2a entries to a separate file (useful to remove other plugin log spam)
+Get-Content gw2cc.log -wait | Select-String ' GW2A ' > gw2a.log
+
+then in another terminal window
+Get-Content gw2a.log -wait
